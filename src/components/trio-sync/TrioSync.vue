@@ -46,6 +46,7 @@ export default {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+  max-width: 132px;
   position: relative;
   top: 9px;
 }
