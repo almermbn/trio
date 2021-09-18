@@ -15,6 +15,10 @@ export default {
           description: 'Os contatos do Mailchimp serão sincronizados com Gmail'
         }
       }
+    },
+    languages: {
+      ptBr: 'PT',
+      en: 'EN'
     }
   }
 }

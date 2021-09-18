@@ -14,6 +14,10 @@ export default {
           description: 'These MailChimp contacts will sync to Gmail'
         }
       }
+    },
+    languages: {
+      ptBr: 'PT',
+      en: 'EN'
     }
   }
 }

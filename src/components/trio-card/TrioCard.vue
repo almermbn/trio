@@ -30,12 +30,7 @@
             $t('trio.components.contactSync.allContacts')
           }}
         </div>
-        <span
-          class="checkbox-label"
-          slot="option"
-          slot-scope="scope"
-          @click.self="select(scope.option)"
-        >
+        <span class="checkbox-label" slot="option" slot-scope="scope">
           <input
             class="test"
             type="checkbox"
@@ -67,14 +62,11 @@ export default {
     onSelect(option) {
       let index = this.contacts.findIndex((item) => item.name == option.name)
       this.contacts[index].checked = true
-      console.log(option.name + '  Clicked!! ' + option.checked)
     },
 
     onRemove(option) {
-      console.log('Removed')
       let index = this.contacts.findIndex((item) => item.name == option.name)
       this.contacts[index].checked = false
-      console.log(option.name + '  Removed!! ' + option.checked)
     }
   }
 }
@@ -106,6 +98,7 @@ export default {
     font-weight: normal;
     font-size: 15px;
     line-height: 20px;
+    max-width: 216.72px;
   }
   .icon {
     width: 66.13px;

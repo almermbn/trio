@@ -1,7 +1,7 @@
 <template>
   <div class="sync-container">
     <section id="gmail">
-      <trio-card :contacts="contacts">
+      <trio-card :contacts="contactsGmail">
         <template v-slot:icon>
           <img src="../../assets/gmail.png" />
         </template>
@@ -20,7 +20,7 @@
     </section>
 
     <section id="mailchimp">
-      <trio-card :contacts="contacts">
+      <trio-card :contacts="contactsChimp">
         <template v-slot:icon>
           <img src="../../assets/mailchimp.png" />
         </template>
@@ -41,7 +41,24 @@ export default {
   name: 'TrioContactSync',
   data() {
     return {
-      contacts: [
+      contactsGmail: [
+        {
+          name: 'Family',
+          id: 1,
+          checked: false
+        },
+        {
+          name: 'Work Friends',
+          id: 2,
+          checked: false
+        },
+        {
+          name: 'Another',
+          id: 3,
+          checked: false
+        }
+      ],
+      contactsChimp: [
         {
           name: 'Family',
           id: 1,
